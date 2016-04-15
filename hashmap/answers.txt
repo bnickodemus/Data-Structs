@@ -1,0 +1,22 @@
+Give an example of two words that would hash to the same value using stringHash1() but would not using stringHash2().
+    eat and ate would hash to the same value using stringHash1() but not stringHash2().
+
+Why does the above make stringHash2() superior to stringHash1()?
+    It makes it superior because it can differentiate the words that have the same letters in a different order.
+
+When you run your program on the same input file but one run using stringHash1() and on the other run using stringHash2(). Is it possible for your size() function to return different values?
+    No, if the input is the same they may be hashed to the same location but the words will still be different.
+
+When you run your program on the same input file using stringHash1() on one run and using stringHash2() on another, is it possible for your tableLoad() function to return different values?
+    No, the tableLoad() function will return the same because how many values there are is not effected by the hashed value. 
+
+When you run your program on the same input file with one run using stringHash1() and the other run using stringHash2(), is it possible for your emptyBuckets() function to return different values?
+    Yes, emptyBuckets is dependent upon the values and the values may cause the array to be more empty in the stringHash1() function. 
+
+Is there any difference in the number of 'empty buckets' when you change the table size from an even number, like 1000 to a prime like 997 ?
+    No, decreasing the table size will simply decrease the number of empty buckets 
+
+Using the timing code provided to you. Run you code on different size hash tables. How does changing the hash table size affect your performance? Please show results as a graph for various table sizes. (separate image files) 
+    see graph.png 
+
+
